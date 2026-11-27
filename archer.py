@@ -7,6 +7,9 @@ class Archer(Personnage):
     """Tire des flèches (10 dégâts si le tir réussit). Sans flèche : coup de dague (2 dégâts)."""
 
     def __init__(self, nom: str, pv: int, dexterite: float, fleches: int) -> None:
+                super().__init__(nom, pv)
+                self._dexterite = dexterite
+                self._fleches = fleches
         # À COMPLÉTER (s'inspirer du constructeur de Guerrier)
         # dexterite : probabilité de toucher, dans ]0, 1]
         pass
